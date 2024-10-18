@@ -7,12 +7,12 @@ function generateOptions()
     }
 }
 
-function generateTable()
+function generateTable($max)
 {
     echo "<table border='1' style='border-collapse: collapse;'>";
-    for ($i = 1; $i <= 9; $i++) {
+    for ($i = 1; $i <= $max; $i++) {
         echo "<tr>";
-        for ($j = 1; $j <= 9; $j++) {
+        for ($j = 1; $j <= $max; $j++) {
             $result = $i * $j;
             echo "<td>$i x $j = $result</td>";
         }
