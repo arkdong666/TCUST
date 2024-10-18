@@ -13,7 +13,7 @@
     <label for="number">選擇一個數字：</label>
     <select name="number" id="number">
       <?php
-      include_once 'demo.php'; // 使用 include_once 避免重複宣告
+      include_once 'function.php'; // 使用 include_once 避免重複宣告
       generateOptions();
       ?>
     </select>
